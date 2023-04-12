@@ -36,8 +36,8 @@ app.Animation = (function () {
 	// Starts the animation
 	function start() {
 		tl1.to(hl, 1, {opacity:1, ease:Linear.easeNone})
-			.to(lu, 1, {opacity:1, ease:Linear.easeNone}, "-=0.5")
-			.to(cta, 1, {opacity:1, ease:Linear.easeNone}, "-=0.5");
+			.to(lu, 1, {opacity:1, ease:Linear.easeNone}, "+=0.75")
+			.to(cta, 1, {opacity:1, ease:Linear.easeNone}, "+=0.75");
 
 		tl2.to(cta, 0.25, {y:-3, ease: Sine.easeOut})
 			.to(cta, 0.5, {y:3, ease: Sine.easeIn})
